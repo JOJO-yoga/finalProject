@@ -1,0 +1,25 @@
+body, html { min-width: 1200px; /* height: 100%; */ background: #f1f1f1; }
+body { /* background: #f1f1f1; */ }
+.pc_wrap { position: absolute; width: 100%; height: 100%; background: #fff; left: 0; top: 0; }
+/*登录*/
+.LoginBox { background: url(../images/bg.jpg) no-repeat center top; width: 100%; height: 100%; position: absolute; left: 0; top: 0; background-size: cover; }
+.LoginBox::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,.1); }
+.VerticalCenteredBox { width: 469px; height: 320px; position: absolute; left: 50%; top: 50%; margin: -159.5px 0 0 -234.5px; background: rgba(245,245,245,.7); border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.LoginHead { background: #fe7844; height: 60px; line-height: 60px; text-align: center; color: #fff; font-size: 22px; font-weight: bold; }
+.mar_top30 { margin-top: 30px; }
+.LoginUserBoxOut { margin: auto; width: 325px; }
+.LoginUserBox { width: 325px; height: 35px; background: #fff; border: 1px solid #ccc; border-radius: 3px; margin-bottom: 30px; position: relative; }
+.LoginUserBox span { color: #ff0000; font-size: 12px; position: absolute; bottom: -24px; left: 0; }
+.LoginUserInput { padding: 0 20px; height: 100%; font-size: 16px; color: #333; width: 285px; }
+.LoginUserInput::-webkit-input-placeholder { color: #ccc; }
+
+.LoginLastBox { position: relative; }
+.LoginLastBox .leftBox { display: inline-block; vertical-align: middle; float: left; /* line-height: 39px; */ margin: 11px 0 0 0; }
+.LoginLastBox .leftBox span { font-size: 14px; vertical-align: middle; }
+.inputcheck { -webkit-appearance: none; }
+.inputcheck + label { display: inline-block; width: 17px; height: 17px; cursor: pointer; top: 0; left: 0; background: rgb(254, 120, 68); vertical-align: middle; position: relative; }
+
+.inputcheck:checked + label::before { display: inline-block; content: "\2714"; text-align: center; font-size: 16px; color: white; position: absolute; top: -3px; left: 2px; }
+
+.LoginLastBox .RightBox { width: 99px; height: 40px; text-align: center; display: inline-block; float: right; background: #fe7844; color: #fff; border-radius: 3px; line-height: 40px; font-size: 16px; }
+.LoginLastBox .RightBox:hover { background: #f96228; }
