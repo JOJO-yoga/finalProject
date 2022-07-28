@@ -1,7 +1,7 @@
 body, html { min-width: 1200px; /* height: 100%; */ background: #f1f1f1; }
 body { /* background: #f1f1f1; */ }
 .pc_wrap { position: absolute; width: 100%; height: 100%; background: #fff; left: 0; top: 0; }
-/*登录*/
+/*login*/
 .LoginBox { background: url(../images/bg.jpg) no-repeat center top; width: 100%; height: 100%; position: absolute; left: 0; top: 0; background-size: cover; }
 .LoginBox::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,.1); }
 .VerticalCenteredBox { width: 469px; height: 320px; position: absolute; left: 50%; top: 50%; margin: -159.5px 0 0 -234.5px; background: rgba(245,245,245,.7); border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
