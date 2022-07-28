@@ -1,4 +1,4 @@
-The project is structured as follows.
+This project main part is src file and the project is structured as follows.
 ```
 src:.
 │  
