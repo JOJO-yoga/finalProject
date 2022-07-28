@@ -21,40 +21,30 @@ public class loginConfig extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(userDetailsService).passwordEncoder(password());
     }
 
-    /**
-     * @param
-     * @method 密码加密规则
-     */
+
     @Bean
     PasswordEncoder password() {
         return new BCryptPasswordEncoder();
     }
 
-    /**
-     * @param
-     * @method 配置过滤规则 url层面
-     */
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        //退出
         http.logout().logoutUrl("/logout").
                 logoutSuccessUrl("/login").permitAll();
 
-        //配置没有权限访问跳转自定义页面
         http.exceptionHandling().accessDeniedPage("/unauth.html");
         http.authorizeRequests()
-                .antMatchers("/", "/login").permitAll() //设置哪些路径可以直接访问，不需要认证
+                .antMatchers("/", "/login").permitAll()
                 .anyRequest().permitAll();
-        //配置 登录的相关
-        http.formLogin()   //自定义自己编写的登录页面
-                .loginPage("/login")  //登录页面设置
-                .loginProcessingUrl("/user/dologin").permitAll()  //登录访问路径
+
+        http.formLogin()
+                .loginPage("/login")
+                .loginProcessingUrl("/user/dologin").permitAll()
                 .usernameParameter("Id")
                 .passwordParameter("password")
-                .defaultSuccessUrl("/index").permitAll()  //登录成功之后，跳转路径
+                .defaultSuccessUrl("/index").permitAll()
                 .failureUrl("/login");
-
-        //关闭csrf防护
         http.csrf().disable();
     }
     @Override

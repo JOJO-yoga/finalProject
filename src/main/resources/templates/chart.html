@@ -21,7 +21,6 @@
             <div >
                 <div id="main" style="width: 500px;height:300px;"></div>
                 <script type="text/javascript">
-                    // 基于准备好的dom，初始化echarts实例
                     var myChart = echarts.init(document.getElementById('main'));
                     var nums="[[${userScore1}]]";
                     var num1="[[${userScore2}]]";
@@ -29,7 +28,7 @@
                     var num3="[[${userScore4}]]";
                     var num4="[[${userScore5}]]";
                     var num5="[[${userScore6}]]";
-                    // 指定图表的配置项和数据
+
                     var option = {
                         title: {
                             text: 'Highest score of each level'
@@ -48,7 +47,7 @@
                             data: [nums, num1, num2, num3, num4, num5]
                         }]
                     };
-                    // 使用刚指定的配置项和数据显示图表。
+
                     myChart.setOption(option);
                 </script>
             </div>
