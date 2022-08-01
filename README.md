@@ -1,6 +1,9 @@
 # 7CCSMPRJ Educational games for GCSE maths
 The whole platform uses the IntelliJ idea, developed by Springboot integrating Thymeleaf, and PostgreSQL manages the back-end database. 
 The whole system mainly realizes two parts: mathematical question answering and a two-person number filling game and provides answer scoring, grading, ranking, answer feedback, and corresponding user management functions.
+#### Use guide
+This system is based on the web application developed under the Springboot framework. At present, this systerm is still a development prototype. To run this project, people must import this file into the IntelliJ Idea development environment and start the ** finalprojectapplication.java**  in the Java folder under the SRC folder. The back-end database of this project adopts the PostgreSQL database. The specific design of its database is described in the dissertation report. Before startup, a link with the database is established locally, and its configuration information is in ** application.properties** under the Resources folder. Users can modify the user name and password of the local database to link. 
+After running the system, access http://localhost:8080/login to use this system.
 
 This project main part is src file and the project is structured as follows.
 ```
