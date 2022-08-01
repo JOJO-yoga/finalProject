@@ -1,5 +1,7 @@
+# 7CCSMPRJ Educational games for GCSE maths
 The whole platform uses the IntelliJ idea, developed by Springboot integrating Thymeleaf, and PostgreSQL manages the back-end database. 
 The whole system mainly realizes two parts: mathematical question answering and a two-person number filling game and provides answer scoring, grading, ranking, answer feedback, and corresponding user management functions.
+
 This project main part is src file and the project is structured as follows.
 ```
 src:.
