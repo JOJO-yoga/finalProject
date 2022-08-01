@@ -144,6 +144,7 @@ src:.
                         FinalProjectApplicationTests.java
 ```
 ### SQL generator code
+The code to generate the database is as follows:
 ``` sql
 create sequence users_id_seq
     as integer;
