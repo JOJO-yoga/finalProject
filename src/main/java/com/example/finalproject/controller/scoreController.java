@@ -321,7 +321,6 @@ public class scoreController {
         model.addAttribute("score",score);
         model.addAttribute("time",(timeDiff/10));
         model.addAttribute("accuracy",right);
-        model.addAttribute("accuracyRate",(right/total));
         model.addAttribute("rank",i);
         model.addAttribute("level",level);
         model.addAttribute("uid",userInfo.getId());
